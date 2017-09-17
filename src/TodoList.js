@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import TodoItems from './TodoItems';
 import Todoinput from './Todoinput';
-import './App.css'
+import './App.css';
+
 
 class TodoList extends React.Component {
 
@@ -17,10 +18,13 @@ class TodoList extends React.Component {
       }
   render () {
       return (
-          <div>
-            <h3> To Do List</h3>
-            <TodoItems items= {this.state.todos} />
-            <Todoinput addTodo={this.addTodo} />
+          <div className = "App">
+             <div className = "App-header">
+               <h3>Make a List of Things using this Todo List</h3>
+             </div>
+               <h3>Todo List</h3>
+               <TodoItems items= {this.state.todos} />
+               <Todoinput addTodo={this.addTodo} />
          </div>
 
       )
