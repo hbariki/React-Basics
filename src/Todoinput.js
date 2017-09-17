@@ -3,7 +3,7 @@ import React from 'react';
 class Todoinput extends  React.Component {
     constructor(props){
         super(props)
-        this.state = {item:''};
+        this.state = {item: ''};
     }
     onChange = (e) => {
         this.setState({item : e.target.value});
@@ -17,7 +17,7 @@ class Todoinput extends  React.Component {
           return(
               <form onSubmit={this.handleSubmit}>
                 <input type = "text" ref="item"
-                       onChange = {this.onChange}
+                       onChange = {this.onChange} 
                        value = {this.state.item} />
                 <input type = "submit" value= "Add" />
              </form>

@@ -13,12 +13,12 @@ class TodoList extends React.Component {
           this.state = { todos: this.props.todos || [] }
       }
   addTodo = (item) => {
-    this.setState({todos: this.state.todos.concat[item]});
+    this.setState({todos: this.state.todos.concat([item])});
       }
   render () {
       return (
           <div>
-            <h3> To DO List </h3>
+            <h3> To Do List</h3>
             <TodoItems items= {this.state.todos} />
             <Todoinput addTodo={this.addTodo} />
          </div>

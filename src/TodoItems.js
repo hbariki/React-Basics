@@ -15,7 +15,7 @@ class TodoItems extends  React.Component {
                 <li key = {index}>{item}</li>
             );
         };
-        return <ul>{this.props.items.map(createItem)}</ul>
+        return <ul>{this.props.items.map(createItem)}</ul>;
 
    }
 
